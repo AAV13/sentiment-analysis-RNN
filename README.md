@@ -27,6 +27,7 @@ SentimentRNN/
 │   ├── preprocess.py              # (Data loading and preprocessing pipeline)
 │   ├── models.py                  # (Defines SentimentRNN, LSTM, BiLSTM models)
 │   ├── train.py                   # (Runs a single training & evaluation experiment)
+│   ├── analyze.py                 # (Analyzes metrics.csv and generates plots)
 │   ├── utils.py                   # (Seeding function for reproducibility)
 │   └── generate_loss_plot.py      # (Generates loss curves for best/worst models)
 │
@@ -98,8 +99,11 @@ python run_experiments.py
 
 ### 3. Generate Analysis Plots
 
-The `Sentiment_Analysis_Report.md` file (or a Colab notebook) contains the `pandas` and `seaborn` code  
-to analyze the `results/metrics.csv` file and generate the primary plots.
+After run_experiments.py creates results/metrics.csv, run the analyze.py script to generate the primary analysis plots. The -m flag is required.
+```bash
+python -m src.analyze
+```
+This will save f1_vs_seq_length.png, optimizer_comparison.png, and clipping_effect.png to the results/plots/ folder.
 
 ---
 
