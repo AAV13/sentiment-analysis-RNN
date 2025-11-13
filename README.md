@@ -32,7 +32,7 @@ SentimentRNN/
 │
 ├── run_experiments.py             # (Runner script to automate all 36 experiments)
 ├── requirements.txt               # (Python dependencies)
-├── report.pdf                     # (The final written report - not included here)
+├── report.pdf                     # (The final written report)
 └── README.md                      # (This file)
 ```
 
@@ -128,3 +128,4 @@ to the `results/plots/` folder.
   `Sentiment_Analysis_Report.md` (or `report.pdf`).
 
 ---
+
