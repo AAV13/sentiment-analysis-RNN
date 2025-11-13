@@ -1,6 +1,6 @@
 # Comparative Analysis of RNN Architectures for Sentiment Classification
 
-This repository contains the code for a master's-level project in Data Science, implementing a systematic comparison of **RNN**, **LSTM**, and **Bidirectional LSTM** models for sentiment classification.  
+This repository contains the code for implementing a systematic comparison of **RNN**, **LSTM**, and **Bidirectional LSTM** models for sentiment classification.  
 The project runs **36 experiments** to analyze the impact of architecture, optimizer, sequence length, and gradient clipping on model performance.
 
 ---
