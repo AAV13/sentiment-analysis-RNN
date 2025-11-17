@@ -67,20 +67,9 @@ pip install -r requirements.txt
 All commands should be run from the root directory (`SentimentRNN/`).  
 This project was developed in a **Google Colab environment** using a **T4 GPU**.
 
-### 1. Run a Single Experiment
-
-You can run a single experiment with custom parameters using `src/train.py`.  
-The `-m` flag is required to handle the package imports correctly.
-
-**Example: Run a single baseline test**
-
-```bash
-python -m src.train --model_type 'LSTM' --optimizer 'Adam' --seq_len 50
-```
-
 ---
 
-### 2. Run the Full 36-Experiment Suite
+### 1. Run the Full 36-Experiment Suite
 
 To reproduce the main results, run the `run_experiments.py` script. This will:
 
@@ -97,7 +86,7 @@ python run_experiments.py
 
 ---
 
-### 3. Generate Analysis Plots
+### 2. Generate Analysis Plots
 
 After run_experiments.py creates results/metrics.csv, run the analyze.py script to generate the primary analysis plots. The -m flag is required.
 ```bash
@@ -107,7 +96,7 @@ This will save f1_vs_seq_length.png, optimizer_comparison.png, and clipping_effe
 
 ---
 
-### 4. Generate Loss Curves
+### 3. Generate Loss Curves
 
 To generate the final "Loss vs. Epochs" plots for the best and worst models, run:
 
